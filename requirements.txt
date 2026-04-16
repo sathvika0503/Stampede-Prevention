@@ -3,4 +3,6 @@ ultralytics==8.2.0
 opencv-python-headless==4.7.0.72
 numpy==1.24.4
 Pillow==10.0.0
-imageio
+imageio==2.34.0
+torch==2.2.2
+torchvision==0.17.2
