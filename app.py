@@ -32,7 +32,7 @@ if platform.system() != "Windows":
 uploaded_file = st.sidebar.file_uploader("Upload Video", type=["mp4", "avi", "mov"])
 
 # ---------- LOAD MODEL ----------
-model = YOLO("yolov8n.pt")  # lightweight model (faster on cloud)
+model = YOLO("yolov8n.pt", task="detect")  # lightweight model (faster on cloud)
 
 # ---------- HEATMAP (NO OPENCV) ----------
 def generate_heatmap(frame, boxes):
@@ -127,4 +127,5 @@ if uploaded_file:
 
         FRAME_WINDOW.image(frame)
         #last
+#
 #
